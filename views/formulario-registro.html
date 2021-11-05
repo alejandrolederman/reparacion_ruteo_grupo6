@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/99d2f24388.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"rel="stylesheet" />
+<style>@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');</style>
+
+    <title>Formulario de registro </title>
+</head>
+<body>
+    <header class="header-login">
+        <nav class="main-header-top-bar">
+            <a href="/views/home.html"><img src="/img/LOGO CELL NOW.jpg" class="logo"></a>
+                <div class="search">
+                    <div class="form">
+                        <input type="text" name="nombre" placeholder="Busca lo que quieras           " class="input">
+                    </div>  
+                    <div class="menu-right-header">
+                            <a href="/views/formulario-registro.html"><i class="fas fa-user"></i></a>
+                            <a href="/views/formulario-registro.html"><span class="header-usuraio">   username    </span></a>
+                            <a href= "/views/carrito-de-compras.html"><i class="fas fa-shopping-cart"></i></a>
+                            <i class="far fa-question-circle"></i> 
+                        </div>      
+                </div>     
+        </nav>
+            <div class="nombre">
+                CELLNOW.COM
+            </div>
+    </header>
+    <main class = "register">
+        <h3 class="text-color">Registrate!</h3>
+        <form action= "/" method="POST" class= "registerTotal">
+            <div>
+                <input type= "text" name="name" placeholder= "Nombre y apellido" required minlength="2" maxlength="10" class="nombre-registro">
+                <input type="text" name="user"  placeholder= "Nombre de usuario" required class="nombre-registro">
+                <input type= "email" name= "email" placeholder="E-mail" type="email" class="nombre-registro">
+                <br>
+            <div class="fecha-registro">
+                <label >Fecha de nacimiento: </label>
+                <input type="date" name="fecha" placeholder="" class="nombre-registro">
+            </div>   
+                <br>
+                <input type= "text" name="dni" placeholder="DNI" class="nombre-registro"> 
+            </div>
+
+            <h4 class="text-color">Intereses</h4>
+                <div class="interests"> 
+                    <div>
+                        <input type= "checkbox" name= "interests" value="a" id="a">
+                        <label for= "a" class="text-color">Samsung</label>
+                    </div>
+                    <div>
+                        <input type= "checkbox" name= "interests" value="b" id="b">
+                        <label for= "b" class="text-color">Apple</label>
+                    </div>
+                    <div>
+                        <input type= "checkbox" name= "interests" value="c" id="c">
+                        <label for= "c" class="text-color">LG</label>
+                    </div>
+                    <div>
+                        <input type= "checkbox" name= "interests" value="d" id="d">
+                        <label for= "d" class="text-color">Motorola</label>
+                    </div>
+                    <div>
+                        <input type= "checkbox" name= "interests" value="e" id="e">
+                        <label for= "e" class="text-color">Huawei</label>
+                    </div>
+                    <div>
+                        <input type= "checkbox" name= "interests" value="f" id="f">
+                    <lab    el for= "f" class="text-color">Xiaomi</label>
+                    </div>
+                    <div>
+                        <input type= "checkbox" name= "interests" value="g" id="g">
+                        <label for= "g" class="text-color">Sony</label>
+                    </div>
+                </div>
+                <br>
+                <br>
+        <h4 class="text-color imagen-perfil">Elegí tu foto de perfil</h4>
+        <input type= "file" name="avatar" class="imagen-perfil">
+            <br>
+            <br>
+        <input type= "password" name="pass" placeholder="Elegí tu contraseña" minlength="6" class="pass-registro">
+        <input type= "password" name="pass_confirm" placeholder="Confirma tu contraseña" class="pass-registro">
+            <br>
+            <br>
+        <div>
+            <button class="button" name= "button"><span> ENVIAR</span></button> 
+            <button class="button" name= "button"><span> BORRAR</span></button>
+        </div> 
+            <br>
+            <br>
+        </form>
+    </main>
+    <footer>
+        <h4>Trabajá con nosotros!</h4>
+        <p>Copyright cellnow.com since 2021 ver legales</p>
+
+    </footer>
+    
+</body>
+</html>
